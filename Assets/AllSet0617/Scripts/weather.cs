@@ -13,7 +13,7 @@ public class weather : MonoBehaviour
 {
     string Zero;
     public Text ScriptTxt, DateTxt,TimeTxt;
-    public string serviceKey = "aZ8tJthg1tO6GeatSxZNcM4JNnEqAuuGtaKfzfQVFZ%2FTxuwWmPDDkZiBBfLfov%2Fiiugwii5W9RNkHzLMmUUUJQ%3D%3D"; // 받아온 키
+    public string serviceKey = "servicekey"; // 받아온 키
     //public string nx = "63"; // 천안시 동남구 위도
     //public string ny = "110"; // 천안시 동남구 경도
     //public string baseDate = "20200605";// 조회하고 싶은 날짜
