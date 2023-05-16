@@ -14,16 +14,20 @@ public class weather : MonoBehaviour
     string Zero;
     public Text ScriptTxt, DateTxt,TimeTxt;
     public string serviceKey = "servicekey"; // 받아온 키
-    // public string nx = "63"; // 위도
-    // public string ny = "110"; // 경도
-    // public string baseDate = "20200605";// 조회하고 싶은 날짜
-    // public string baseTime = "0900";// 조회하고 싶은 시간
-    // public string type = "json"; // json;
+    public string nx = "63"; // 위도
+    public string ny = "110"; // 경도
+    public string baseDate = "20200605"; // 조회하고 싶은 날짜
+    public string baseTime = "0900"; // 조회하고 싶은 시간
+    public String pageNo = "1";
+    public string numOfRows="10";
     string weatherTemp = "0.0"; // 현재 시간 기온
     // 정보 모아서 URL 정보 만들기
-    // public string urlStr = "http://apis.data.go.kr/1360000/VilageFcstInfoService/getVilageFcst?" + "serviceKey=" + serviceKey + "&base_date=" + baseDate + "&base_time=" + baseTime + "&nx" +nx +"&ny" +ny + "&_type= " + type;
-    string urlStr = "http://apis.data.go.kr/1360000/VilageFcstInfoService/getUltraSrtNcst?serviceKey=aZ8tJthg1tO6GeatSxZNcM4JNnEqAuuGtaKfzfQVFZ%2FTxuwWmPDDkZiBBfLfov%2Fiiugwii5W9RNkHzLMmUUUJQ%3D%3D&pageNo=1&numOfRows=10&dataType=JSON&base_date=20200626&base_time=0500&nx=63&ny=110&";
-
+    public string urlStr = "http://apis.data.go.kr/1360000/VilageFcstInfoService/getVilageFcst?" + "serviceKey=" + serviceKey +
+    "&pageNo="+pageNo+"&numOfRows"+numOfRows+"&dataType=JSON"+
+    "&base_date=" + baseDate + "&base_time=" + baseTime +
+    "&nx" +nx +"&ny" +ny;
+    
+    
     string JSON_Name;
     string JSON_Temperature;
     float temperature;
